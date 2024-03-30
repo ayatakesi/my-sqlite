@@ -141,6 +141,7 @@ include $(BUILD_HOST_EXECUTABLE)
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(common_src_files)
 LOCAL_CFLAGS += $(minimal_sqlite_flags)
+LOCAL_EXPORT_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_MODULE:= libsqlite_static_minimal
 LOCAL_SDK_VERSION := 23
 include $(BUILD_STATIC_LIBRARY)
